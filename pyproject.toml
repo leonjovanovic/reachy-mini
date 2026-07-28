@@ -1,0 +1,20 @@
+[project]
+name = "reachy-mini-project"
+version = "0.1.0"
+description = "Reachy Mini project"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+authors = [
+    { name = "Leon Jovanovic" }
+]
+dependencies = [
+    "reachy-mini[mujoco]>=1.6.1",
+    "soundfile>=0.13.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+]
